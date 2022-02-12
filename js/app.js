@@ -1,6 +1,7 @@
 var url = window.location.href;
 var swLocation = url.includes('localhost') ? '/sw.js' : '/twittor/sw.js';
 
+console.log('%c@#@ 🪲 swLocation', 'background: #332167; color: #b3d1f6; font-size: 14px', swLocation);
 
 if (navigator.serviceWorker) {
     navigator.serviceWorker.register(swLocation);
